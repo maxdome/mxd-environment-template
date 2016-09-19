@@ -1,0 +1,15 @@
+{
+  "logging": {
+    "transports": [
+      {
+        "type": "Console",
+        "options": {
+          "level": "debug",
+          "colorize": true,
+          "timestamp": true,
+          "prettyPrint": true
+        }
+      }
+    ]
+  }
+}
