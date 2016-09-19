@@ -1,5 +1,3 @@
-'use strict';
-
 // set up the app config with the all.json and development.json
 
 const config = Object.assign({}, require('../config/all.json'));
