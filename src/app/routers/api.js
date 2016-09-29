@@ -3,7 +3,7 @@ module.exports = (express) => {
   const router = express.Router();
 
   const directory = '../controllers/api';
-  router.get('/', require(`${directory}/hello`)());
+  router.get('/hello', require(`${directory}/hello`)());
 
   return router;
 };
