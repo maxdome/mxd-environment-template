@@ -7,5 +7,5 @@ app.use(require('./middlewares/example')());
 app.use('/api/v1', require('./routers/api')(express));
 
 app.get('/', (req, res) => {
-  res.redirect('/docs');
+  res.redirect('/docs/v1#/default');
 });
