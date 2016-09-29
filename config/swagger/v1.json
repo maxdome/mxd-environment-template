@@ -14,5 +14,28 @@
       "email": "christoph.herrmann@maxdome.de"
     }
   },
-  "paths": {}
+  "paths": {
+    "/hello": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object",
+              "required": [
+                "hello"
+              ],
+              "properties": {
+                "hello": {
+                  "type": "string",
+                  "default": "world!"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
