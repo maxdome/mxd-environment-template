@@ -1,0 +1,18 @@
+{
+  "swagger": "2.0",
+  "basePath": "/api/v1",
+  "produces": [
+    "application/json"
+  ],
+  "info": {
+    "version": "0.0.0",
+    "title": "MXD Environment Template",
+    "description": "",
+    "contact": {
+      "name": "Christoph Herrmann",
+      "url": "",
+      "email": "christoph.herrmann@maxdome.de"
+    }
+  },
+  "paths": {}
+}

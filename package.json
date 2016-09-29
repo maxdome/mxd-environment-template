@@ -20,7 +20,8 @@
     "babel-cli": "^6.7.5",
     "babel-plugin-transform-async-to-generator": "^6.8.0",
     "babel-preset-es2015-node4": "^2.1.0",
-    "mxd-environment": "^3.0.0"
+    "mxd-environment": "^4.0.0",
+    "mxd-swagger": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
