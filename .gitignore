@@ -1,4 +1,5 @@
 /config/properties.json
-/log
+/coverage
+/dest
 /node_modules
 /npm-debug.log*
