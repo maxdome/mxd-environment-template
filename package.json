@@ -6,7 +6,7 @@
   "readmeFilename": "README.md",
   "main": "dest/app/app.js",
   "scripts": {
-    "develop": "nodemon src/app.js --exec babel-node",
+    "develop": "nodemon src/app/app.js --exec babel-node",
     "lint": "eslint src",
     "postinstall": "npm run build",
     "start": "mxd-start",
