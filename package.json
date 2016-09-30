@@ -28,6 +28,7 @@
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^11.1.0",
     "mocha": "^3.0.2",
+    "nodemon": "^1.10.2",
     "sinon": "^1.17.6",
     "sinon-chai": "^2.8.0"
   }
