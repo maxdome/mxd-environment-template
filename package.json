@@ -6,15 +6,15 @@
   "readmeFilename": "README.md",
   "main": "dest/app/app.js",
   "scripts": {
-    "develop": "npm run transpile && node dest/app/app.js",
+    "develop": "nodemon src/app.js --exec babel-node",
     "lint": "eslint src",
-    "postinstall": "npm run transpile",
+    "postinstall": "npm run build",
     "start": "mxd-start",
     "status": "mxd-status",
     "stop": "mxd-stop",
-    "test": "npm run transpile && mocha --reporter spec 'dest/test/**/*.js'",
-    "test-cov": "npm run transpile && istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot 'dest/test/**/*.js'",
-    "transpile": "babel src -d dest"
+    "test": "npm run build && mocha --reporter spec 'dest/test/**/*.js'",
+    "test-cov": "npm run build && istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot 'dest/test/**/*.js'",
+    "build": "babel src -d dest"
   },
   "dependencies": {
     "babel-cli": "^6.7.5",
