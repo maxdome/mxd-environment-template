@@ -4,22 +4,22 @@
   "version": "1.0.0",
   "private": true,
   "readmeFilename": "README.md",
-  "main": "dest/app/app.js",
+  "main": "dest/app.js",
   "scripts": {
-    "develop": "nodemon src/app/app.js --exec babel-node",
+    "develop": "nodemon src/app.js --exec babel-node",
     "lint": "eslint src",
     "postinstall": "npm run build",
     "start": "mxd-start",
     "status": "mxd-status",
     "stop": "mxd-stop",
-    "test": "npm run build && mocha --reporter spec 'dest/test/**/*.js'",
-    "test-cov": "npm run build && istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot 'dest/test/**/*.js'",
+    "test": "mocha --compilers js:babel-register",
     "build": "babel src -d dest"
   },
   "dependencies": {
     "babel-cli": "^6.7.5",
     "babel-plugin-transform-async-to-generator": "^6.8.0",
     "babel-preset-es2015-node4": "^2.1.0",
+    "babel-register": "^6.16.3",
     "mxd-environment": "^4.0.1",
     "mxd-swagger": "^1.0.3"
   },
@@ -27,7 +27,6 @@
     "chai": "^3.5.0",
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^11.1.0",
-    "istanbul": "^0.4.5",
     "mocha": "^3.0.2",
     "sinon": "^1.17.6",
     "sinon-chai": "^2.8.0"

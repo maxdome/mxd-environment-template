@@ -1,6 +1,0 @@
-instrumentation:
-  root: './src/app'
-  excludes: [
-    'app.js'
-  ]
-  include-all-sources: true
