@@ -1,6 +1,9 @@
 /* eslint no-unused-vars: "off" */
-const { app, checkhelper, config, express, healthcheck, info, logging, silentLogging }
-  = require('mxd-environment')();
+const environment = require('mxd-environment')();
+
+const app = environment.app;
+const express = environment.express;
+
 require('mxd-swagger')(app, express);
 
 app.use(require('./middlewares/example')());

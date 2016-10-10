@@ -2,8 +2,7 @@ module.exports = (express) => {
   /* eslint new-cap: "off" */
   const router = express.Router();
 
-  const directory = '../controllers/api';
-  router.get('/hello', require(`${directory}/hello`)());
+  router.get('/hello', require('../controllers/api/hello')());
 
   return router;
 };
