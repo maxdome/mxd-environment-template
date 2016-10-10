@@ -1,3 +1,7 @@
 {
-  "plugins": ["transform-async-to-generator", "transform-strict-mode"]
+  "plugins": [
+    "transform-async-to-generator",
+    "transform-es2015-modules-commonjs",
+    "transform-strict-mode"
+  ]
 }
