@@ -21,8 +21,9 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.16.0",
     "babel-plugin-transform-strict-mode": "^6.11.3",
     "babel-register": "^6.16.3",
-    "mxd-environment": "^4.0.1",
-    "mxd-swagger": "^1.0.3"
+    "mxd-environment": "^5.0.0",
+    "mxd-starter": "^2.1.0",
+    "mxd-swagger": "^1.0.5"
   },
   "devDependencies": {
     "chai": "^3.5.0",
