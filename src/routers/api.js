@@ -1,10 +1,9 @@
-import helloApiController from '../controllers/api/hello';
-
-export default (express) => {
+module.exports = ({ express }) => {
   /* eslint new-cap: "off" */
   const router = express.Router();
+  /* eslint new-cap: "error" */
 
-  router.get('/hello', helloApiController());
+  router.get('/hello', require('../controllers/api/hello')());
 
   return router;
 };
