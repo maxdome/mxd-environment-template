@@ -1,7 +1,6 @@
 module.exports = ({ express }) => {
-  /* eslint new-cap: "off" */
+  // eslint-disable-next-line new-cap
   const router = express.Router();
-  /* eslint new-cap: "error" */
 
   router.get('/hello', require('../controllers/api/hello')());
 
