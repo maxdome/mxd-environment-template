@@ -1,8 +1,9 @@
 {
-  "presets": ["es2015-node4"],
-  "plugins": [
-    "transform-async-to-generator",
-    "transform-regenerator",
-    "transform-strict-mode"
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": 4
+      }
+    }]
   ]
 }
